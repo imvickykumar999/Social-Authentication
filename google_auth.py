@@ -69,7 +69,14 @@ def logout():
 
 @app.route("/")  #the home page where the login button will be located
 def index():
-    return "Hello World <a href='/login'><button>Login</button></a>"
+    return '''
+    <a href="/login">
+        <img id="google"
+            src="https://img.shields.io/badge/Google-Connect-brightgreen?style=for-the-badge&labelColor=black&logo=google"
+            alt="Google"> 
+        <br>
+    </a>
+    '''
 
 
 @app.route("/protected_area")  #the page where only the authorized users can go to
